@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Application - Urgent Rupee Style</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #8d2e8d;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-section {
+      margin-top: 20px;
+    }
+    .submit-btn {
+      background-color: #e00065;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Apply Now</h2>
+    <form>
+      <div class="form-section">
+        <label for="loanAmount">Loan Amount*</label>
+        <input type="number" id="loanAmount" placeholder="Enter Loan Amount" />
+
+        <label for="loanTenure">Loan Tenure*</label>
+        <select id="loanTenure">
+          <option value="">Select number of days</option>
+          <option value="30">30 days</option>
+          <option value="90">90 days</option>
+          <option value="180">180 days</option>
+          <option value="365">365 days</option>
+        </select>
+
+        <label for="purpose">Purpose of Loan*</label>
+        <select id="purpose">
+          <option value="">Select Purpose</option>
+          <option value="Medical">Medical</option>
+          <option value="Education">Education</option>
+          <option value="Business">Business</option>
+          <option value="Personal">Personal</option>
+        </select>
+
+        <label for="income">Monthly Income*</label>
+        <input type="number" id="income" placeholder="Enter Monthly Income" />
+      </div>
+
+      <div class="form-section">
+        <label for="fullName">Full Name (as per PAN)*</label>
+        <input type="text" id="fullName" placeholder="Enter Full Name" />
+
+        <label for="mobile">Mobile Number*</label>
+        <input type="text" id="mobile" placeholder="Enter Mobile Number" />
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" placeholder="Enter Email" />
+
+        <label for="dob">Birth of Date*</label>
+        <input type="date" id="dob" />
+
+        <label for="gender">Gender*</label>
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="employeeType">Employee Type*</label>
+        <select id="employeeType">
+          <option value="">Select Employee Type</option>
+          <option value="Salaried">Salaried</option>
+          <option value="Self-employed">Self-employed</option>
+          <option value="Student">Student</option>
+        </select>
+
+        <label for="salaryMode">Salary Mode*</label>
+        <select id="salaryMode">
+          <option value="">Select Salary Mode</option>
+          <option value="Bank Transfer">Bank Transfer</option>
+          <option value="Cash">Cash</option>
+          <option value="Cheque">Cheque</option>
+        </select>
+
+        <label for="pan">PAN*</label>
+        <input type="text" id="pan" placeholder="Enter PAN Number" />
+
+        <label for="city">City*</label>
+        <input type="text" id="city" placeholder="Enter City" />
+
+        <label for="pincode">Pincode*</label>
+        <input type="text" id="pincode" placeholder="Enter Pincode" />
+      </div>
+
+      <label>
+        <input type="checkbox" required /> I agree to the terms and conditions and privacy policy.
+      </label>
+
+      <button type="submit" class="submit-btn">Apply Now</button>
+
+      <div class="note">
+        <p>Example: Borrow ₹1000 for 4 months, repay with 4 EMI - EMI Amount ₹280. Processing fee of ₹50 will be taken before disbursement. Total repayable ₹1120. Interest – 36% per annum. Representative APR – 48%. Max Loan – ₹1,00,000.</p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
